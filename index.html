@@ -84,6 +84,7 @@
         </section>
     </header>
     <main>
+      <!-- courses section  -->
        <div class="text-center pt-5 pb-3">
         <h2>Discover Our Popular <br> Courses</h2>
         <p>It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
@@ -114,7 +115,7 @@
                   <h5>Price : 40$</h5>
                 </div>
               </div>
-              <div class="col-12 d-lg-flex d-md-flex d-sm-flex-column align-items-center col-lg-6 col-md-12 col-sm-12">
+              <div class="col-12 d-lg-flex d-md-flex d-sm-flex-column align-items-center col-lg-6 col-md-12 col-sm-12 d-lg-block d-none">
                 <img src="images/course/course-4.png" class="img-fluid w-100" alt="">
                 <div class="ps-3 pt-3">
                   <h5>Digital Marketing</h5>
@@ -122,7 +123,7 @@
                   <h5>Price : 50$</h5>
                 </div>
               </div>
-              <div class="col-12 d-lg-flex d-md-flex d-sm-flex-column align-items-center col-lg-6 col-md-12 col-sm-12">
+              <div class="col-12 d-lg-flex d-md-flex d-sm-flex-column align-items-center col-lg-6 col-md-12 col-sm-12 d-lg-block d-none">
                 <img src="images/course/course-5.png" class="img-fluid w-100" alt="">
                 <div class="ps-3 pt-3">
                   <h5>Photography Basic Rules</h5>
@@ -130,7 +131,7 @@
                   <h5>Price : 60$</h5>
                 </div>
               </div>
-              <div class="col-12 d-lg-flex d-md-flex d-sm-flex-column align-items-center col-lg-6 col-md-12 col-sm-12">
+              <div class="col-12 d-lg-flex d-md-flex d-sm-flex-column align-items-center col-lg-6 col-md-12 col-sm-12 d-none d-lg-block">
                   <img src="images/course/course-6.png" class="img-fluid w-100" alt="">
                 <div class="ps-3 pt-3">
                   <h5>Motion Graphics</h5>
@@ -143,6 +144,8 @@
             <button type="button" class="btn btn-primary">See More Courses</button>
         </div>
        </section>
+
+       <!-- working section  -->
        <section class="container pt-5">
         <div class="card mb-3" style="max-width: auto;">
           <div class="row g-0">
@@ -159,34 +162,51 @@
           </div>
         </div>
        </section>
+
+       <!-- modal section  -->
        <section class="container bg-primary mt-5 mb-5">
-        <div class="container d-flex justify-content-center align-items-center" style="height: 200px;">
+        <div class="container d-lg-flex flex-lg-row justify-content-lg-center align-items-lg-center d-md-flex flex-md-column justify-content-md-center align-items-md-center d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center d-flex flex-column justify-content-center align-items-center" style="height: 40vh;">
             <div class="w-50 text-light">
                 <h2>Ready to join?</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
-            <div class="">
-            <button class="btn btn-success" data-bs-target="#modalID" data-bs-toggle="modalID">Regester Now</button>
-            <div class="modal fade" id="modalID">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="model-header">
-                            <h3 class="modal-tittle">Heading Tittle</h3>
-                            <button class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>You can Regester</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            <button class="btn btn-warning">save & changes</button>
-                        </div>
-                    </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              REGISTER
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Registration Form:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
                 </div>
-            </div>
+              </div>
             </div>
         </div>
        </section>
+
+       <!-- student section  -->
        <section class="container pt-5 pb-5">
         <div class="pb-3">
           <h2>Meet Our Successfull <br> Students</h2>
